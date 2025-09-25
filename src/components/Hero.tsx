@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Mail, Github, Linkedin } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import profileImage from "@/assets/centrine-profile.jpg";
 
 const Hero = () => {
   console.log("Hero component rendering");
@@ -10,40 +10,40 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
+      {/* Background Image with Professional Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `url(${profileImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-background/30 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-primary/20 to-background/95" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            <span className="block">Centrine</span>
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight drop-shadow-lg">
+            <span className="block text-foreground">Centrine</span>
+            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent drop-shadow-sm">
               Ong'aria
             </span>
           </h1>
 
           {/* Professional Title */}
-          <div className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-8 font-medium">
+          <div className="text-xl sm:text-2xl md:text-3xl text-foreground mb-8 font-medium drop-shadow-md">
             <span className="block sm:inline">Statistician</span>
-            <span className="hidden sm:inline mx-2">|</span>
+            <span className="hidden sm:inline mx-2 text-primary">|</span>
             <span className="block sm:inline">Data Analyst</span>
-            <span className="hidden sm:inline mx-2">|</span>
+            <span className="hidden sm:inline mx-2 text-primary">|</span>
             <span className="block sm:inline">Full Stack Developer</span>
-            <span className="hidden sm:inline mx-2">|</span>
+            <span className="hidden sm:inline mx-2 text-primary">|</span>
             <span className="block sm:inline">AI Evaluator</span>
           </div>
 
           {/* Tagline */}
-          <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
             Transforming data into insights and ideas into digital solutions. 
             Experienced in full-stack development, statistical analysis, and AI evaluation 
             across multiple frameworks and languages.
