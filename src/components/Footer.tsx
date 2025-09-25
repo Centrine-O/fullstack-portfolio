@@ -40,8 +40,8 @@ const Footer = () => {
               Centrine Ong'aria
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Statistician, Data Analyst, and Full Stack Developer passionate about 
-              transforming data into insights and building innovative digital solutions.
+              Full Stack Developer passionate about building scalable web applications 
+              and innovative digital solutions with modern technologies.
             </p>
             <div className="flex items-center space-x-2 text-muted-foreground">
               <Phone className="w-4 h-4" />
