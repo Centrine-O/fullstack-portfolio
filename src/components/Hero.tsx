@@ -4,6 +4,7 @@ import { ArrowRight, Download, Mail, Github, Linkedin } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  console.log("Hero component rendering");
   return (
     <section
       id="home"
