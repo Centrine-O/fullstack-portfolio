@@ -44,14 +44,13 @@ const Hero = () => {
 
             {/* Professional Title */}
             <div className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-8 font-medium leading-relaxed">
-              <span className="block">Full Stack Developer | Data Analyst</span>
-              <span className="block">& Data Analytics Developer | AI</span>
-              <span className="block">Automation Specialist</span>
+              <span className="block">Full Stack Developer</span>
+              <span className="block">Building Modern Web Applications</span>
             </div>
 
             {/* Tagline */}
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Passionate about creating data-driven solutions and innovative web applications. I transform complex data into actionable insights and build scalable software that makes a difference.
+              Passionate about creating scalable web applications and innovative digital solutions. I build end-to-end applications using modern technologies and best practices.
             </p>
 
             {/* CTA Buttons */}

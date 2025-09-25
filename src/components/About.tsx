@@ -4,46 +4,46 @@ import { Download, Code, Database, Brain, TrendingUp } from "lucide-react";
 
 const About = () => {
   const skills = {
-    "Programming & Web Development": [
-      "HTML", "CSS", "JavaScript", "React", "PHP", "Node.js", "Python", "Java", "Kotlin"
+    "Frontend Development": [
+      "React", "Next.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "Responsive Design"
     ],
-    "Frontend Frameworks & CMS": [
-      "WordPress", "Wix", "Next.js", "React", "Responsive Design"
+    "Backend Development": [
+      "Node.js", "PHP", "Python", "Java", "Laravel", "Django", "Spring Boot", "REST APIs"
     ],
-    "Backend & Databases": [
-      "PostgreSQL", "MySQL", "MongoDB", "REST APIs", "Laravel", "Django", "Spring Boot"
+    "Databases": [
+      "PostgreSQL", "MySQL", "MongoDB", "SQL", "Database Design", "Query Optimization"
     ],
-    "Data Analysis & Visualization": [
-      "Python (Pandas, Matplotlib)", "Excel", "SQL", "R", "Power BI", "Tableau"
+    "Development Tools": [
+      "Git", "GitHub", "VS Code", "Postman", "Docker", "Webpack", "Vite", "NPM/Yarn"
     ],
-    "AI & Machine Learning": [
-      "NLP", "Intent Detection", "Slot Filling", "Prompt Evaluation", "Data Annotation"
+    "Cloud & Deployment": [
+      "AWS", "Vercel", "Netlify", "CI/CD", "Linux", "Server Management"
     ],
-    "Tools & Workflow": [
-      "Git", "GitHub", "Postman", "VS Code", "Trello", "Slack", "Jira", "HubSpot", "Figma"
+    "Content Management": [
+      "WordPress", "Headless CMS", "Strapi", "Sanity", "Custom CMS Solutions"
     ]
   };
 
   const highlights = [
     {
       icon: <Code className="w-6 h-6" />,
-      title: "Full Stack Development",
-      description: "Experienced in building responsive web applications using React, Laravel, Django, Spring Boot, and Node.js"
+      title: "Frontend Excellence",
+      description: "Creating responsive, interactive user interfaces with React, Next.js, and modern CSS frameworks"
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Data Analysis",
-      description: "Statistical analysis and visualization using Python, R, SQL, and BI tools like Power BI and Tableau"
+      title: "Backend Architecture",
+      description: "Building scalable APIs and server-side applications using Node.js, PHP, Python, and Java"
     },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "AI & Machine Learning",
-      description: "AI model evaluation, data annotation, NLP tasks, and prompt engineering for LLM training"
+      title: "Database Design",
+      description: "Designing efficient database schemas and optimizing queries for PostgreSQL, MySQL, and MongoDB"
     },
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Statistical Expertise",
-      description: "BSc in Statistics with practical experience in data collection, analysis, and reporting"
+      title: "Performance Optimization",
+      description: "Implementing best practices for web performance, SEO, and user experience optimization"
     }
   ];
 
@@ -56,7 +56,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A versatile professional combining statistical expertise with full-stack development and AI evaluation skills
+            A dedicated full stack developer with expertise in modern web technologies and scalable application development
           </p>
         </div>
 
@@ -68,20 +68,19 @@ const About = () => {
             </h3>
             <div className="prose prose-lg text-muted-foreground">
               <p>
-                Versatile and adaptable professional with a background in statistics and hands-on experience 
-                across web development, data analysis, AI data annotation, digital content creation, and 
-                executive support.
+                Dedicated full stack developer with expertise in modern web technologies and a passion for 
+                creating scalable, user-friendly applications. I specialize in building end-to-end solutions 
+                using React, Node.js, and various backend frameworks.
               </p>
               <p>
-                I have contributed to AI and data-driven projects, worked with both frontend and backend 
-                technologies, managed cross-platform websites, and collaborated on multilingual content, 
-                SEO, and campaign tracking.
+                My experience spans frontend development with modern frameworks, backend API development, 
+                database design, and deployment strategies. I'm proficient in both SQL and NoSQL databases, 
+                cloud services, and modern development workflows.
               </p>
               <p>
-                With a foundation in statistical thinking, I approach each role—whether technical, creative, 
-                or administrative—with structure, attention to detail, and a strong learning mindset. 
-                I thrive in environments that require flexibility, problem-solving, and communication 
-                across diverse teams.
+                I approach each project with attention to detail, clean code practices, and a focus on 
+                performance optimization. I enjoy solving complex problems and collaborating with teams 
+                to deliver high-quality web applications that provide excellent user experiences.
               </p>
             </div>
 
