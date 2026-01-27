@@ -17,7 +17,7 @@ const Portfolio = () => {
       outcome: "Reduced inventory management time by 60% and improved accuracy of stock levels",
       image: "/api/placeholder/600/400",
       demoUrl: "#",
-      codeUrl: "#"
+      codeUrl: "https://github.com/Centrine-O/Inventory-Sales-Management-System"
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const Portfolio = () => {
       outcome: "Reduced no-show rates by 40% and improved patient satisfaction scores",
       image: "/api/placeholder/600/400",
       demoUrl: "#",
-      codeUrl: "#"
+      codeUrl: "https://github.com/Centrine-O/medi-appointments-pro/"
     },
     {
       id: 3,

@@ -25,7 +25,7 @@ const Footer = () => {
     },
     {
       icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/centrine-ongaria",
+      href: "https://github.com/centrine-o",
       label: "GitHub"
     }
   ];
@@ -97,9 +97,6 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
               © {currentYear} Centrine Ong'aria. All rights reserved.
-            </p>
-            <p className="text-muted-foreground text-sm flex items-center">
-              Built with <Heart className="w-4 h-4 mx-1 text-red-500" /> using React & TypeScript
             </p>
           </div>
         </div>

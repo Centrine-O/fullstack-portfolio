@@ -61,12 +61,12 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/centrine-ongaria"
+      href: "https://www.linkedin.com/in/centrine-ong-aria-aba21a343/"
     },
     {
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
-      href: "https://github.com/centrine-ongaria"
+      href: "https://github.com/Centrine-o"
     }
   ];
 
