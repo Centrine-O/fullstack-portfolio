@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,15 +26,42 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("Missing EmailJS environment variables");
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        },
+        { publicKey }
+      );
+
       setIsSubmitting(false);
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 2000);
+    } catch (error) {
+      setIsSubmitting(false);
+      console.error("EmailJS send failed:", error);
+      toast({
+        title: "Message Failed to Send",
+        description: "Something went wrong. Please try again or email me directly.",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
