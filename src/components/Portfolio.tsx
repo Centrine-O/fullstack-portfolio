@@ -21,16 +21,16 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Healthcare Appointment Booking System",
-      category: "django",
-      tech: ["Django", "Python", "PostgreSQL", "React", "REST API"],
-      description: "Patient-centric appointment booking platform with integrated payment processing and medical records management.",
-      problem: "Healthcare facilities needed a digital solution to manage patient appointments and reduce no-shows",
-      features: ["Online appointment booking", "SMS/Email notifications", "Payment integration", "Patient portal"],
-      outcome: "Reduced no-show rates by 40% and improved patient satisfaction scores",
+      title: "MediSecure Portal (Universal Healthcare Platform)",
+      category: "fullstack",
+      tech: ["FastAPI", "Python", "PostgreSQL", "Redis", "React", "Vite", "Docker", "JWT Auth"],
+      description: "Universal multi-facility healthcare platform for Kenya with secure patient/staff access, appointments workflow, and digital forms pipeline.",
+      problem: "Facilities rely on fragmented systems for onboarding, appointments, and forms, causing delays, data silos, and poor operational visibility.",
+      features: ["Role-based patient and staff authentication", "Secure landing and roadmap experience", "Appointments and forms workflow foundation", "API-first backend architecture for multi-facility rollout"],
+      outcome: "Delivered a production-style frontend demo plus a running backend auth foundation, enabling phased rollout from MVP to county and national scale.",
       image: "/api/placeholder/600/400",
-      demoUrl: "#",
-      codeUrl: "https://github.com/Centrine-O/medi-appointments-pro/"
+      demoUrl: "https://centrine-o.github.io/medisecure-portal/",
+      codeUrl: "https://github.com/Centrine-O/medisecure-portal"
     },
     {
       id: 3,
@@ -88,6 +88,7 @@ const Portfolio = () => {
 
   const categories = [
     { id: "all", label: "All Projects" },
+    { id: "fullstack", label: "Full-Stack" },
     { id: "laravel", label: "Laravel" },
     { id: "django", label: "Django" },
     { id: "spring", label: "Spring Boot" },
