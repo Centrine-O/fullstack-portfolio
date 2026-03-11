@@ -28,7 +28,7 @@ const Portfolio = () => {
       problem: "Facilities rely on fragmented systems for onboarding, appointments, and forms, causing delays, data silos, and poor operational visibility.",
       features: ["Role-based patient and staff authentication", "Secure landing and roadmap experience", "Appointments and forms workflow foundation", "API-first backend architecture for multi-facility rollout"],
       outcome: "Delivered a production-style frontend demo plus a running backend auth foundation, enabling phased rollout from MVP to county and national scale.",
-      image: "/api/placeholder/600/400",
+      image: "/assets/medisecure-preview.svg",
       demoUrl: "https://centrine-o.github.io/medisecure-portal/",
       codeUrl: "https://github.com/Centrine-O/medisecure-portal"
     },
